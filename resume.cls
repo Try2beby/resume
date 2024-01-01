@@ -67,6 +67,12 @@
 \newcommand{\datedsubsection}[2]{%
   \subsection[#1]{#1 \hfill #2}%
 }
+\newcommand{\mydatedsubsectionthree}[3]{%
+  \subsection[#1]{#1 \hfill #2 \hfill #3}%
+}
+\newcommand{\mydatedsubsectionfour}[4]{%
+  \subsection[#1]{#1 \hfill #2 \hfill #3 \hfill #4}%
+}
 \newcommand{\datedline}[2]{%
   {\par #1 \hfill #2 \par}%
 }

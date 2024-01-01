@@ -4,89 +4,75 @@
 
 \documentclass{resume}
 \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-% \usepackage{NotoSansSC_external}
-% \usepackage{NotoSerifCJKsc_external}
-% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{涂伟豪}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
- 
+	\email{wy1171633763@163.com} \textperiodcentered\
+	\phone{(+86) 17346651272} \textperiodcentered\
+	\github[Try2beby]{https://github.com/Try2beby}}
+
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\mydatedsubsectionthree{\textbf{复旦大学}}{大数据学院}{2023年9月 -- 至今}
+\textit{在读硕士研究生}\ 应用统计, 预计 2025 年 6 月毕业\\
+\textbf{主修课程}：数据可视化应用及其实现(d3)、机器学习与神经网络导论等
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
+\mydatedsubsectionthree{\textbf{北京航空航天大学}}{数学科学学院}{2019年9月 -- 2023年6月}
+\textit{学士}\ 信息与计算科学
 \begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
+	\item \textbf{学分绩点}: \textbf{3.81}/4.0 \quad \textbf{GPA专业排名}: 1/10
+	\item \textbf{荣誉奖励}:
+	      \begin{itemize}[label=$\ast$]
+		      \item \textbf{国家奖学金}(2019-2020)、国家励志奖学金
+		      \item 全国大学生数学建模竞赛北京赛区甲组一等奖，美国大学生数学建模竞赛H奖.
+		      \item 校学习优秀奖学金、校级优秀生
+	      \end{itemize}
 \end{itemize}
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
-\begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
+\section{\faUsers\ 项目经历}
+\mydatedsubsectionthree{\textbf{全国大学生数学建模竞赛}}{基于历史数据的原材料订购与转运问题研究}{2021年9月}
+\role{队长}{数学建模竞赛，和学院内其他两位同学合作完成}
 \begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
+	\item 负责数据处理、编程建模，完成了\textbf{编程}部分的\textbf{主要工作}；
+	\item 利用主成分分析法完成对供应商的综合评价；采用优先级法解决多目标规划问题，完成对供应商的选择；用0-1整数规划，得到了转运方案. 最终，该作品获评北京赛区甲组\textbf{一等奖}.
 \end{itemize}
-\end{onehalfspacing}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
-\begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+\mydatedsubsectionthree{\textbf{毕业设计}}{深度学习中基于对偶理论的训练算法探究}{2023年2月--2023年5月}
 \begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+	\item 实现了求解带耦合线性约束的Minimax问题的MGD算法，并将其用到神经网络的训练问题中；
+	\item 开发用于求解神经网络训练问题的对偶问题的削平面算法中的问题结构，优化削平面算法的求解过程：
+	      \begin{itemize}[label=$\ast$]
+		      \item 简化了求解违反约束神经元子问题(SOCP)的求解；
+		      \item 在解决约束数量递增的近似对偶问题(LP)时使用热启动，求解时间花费减少90\%.
+	      \end{itemize}
 \end{itemize}
-\end{onehalfspacing}
 
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
+\section{\faUniversity\ 助教工作}
+\datedsubsection{北京航空航天大学《大学计算机基础（理科）》课程助教}{2021年3月-2021年7月}
+\begin{itemize}
+	\item 课程学生人数：约400，课程所用语言：Python；
+	\item 每周线上答疑与线下答疑，帮助学生debug；批改学生实验报告和大作业.
+\end{itemize}
 
-\section{\faCogs\ IT 技能}
+\section{\faCogs\ 能力素养}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
+	\item \textbf{编程}\quad 熟练使用Python，掌握C语言，掌握数据结构知识，能够在linux上使用C++实现算法，了解Bash脚本控制程序自动化执行；熟悉linux平台的使用；熟练使用copilot协助编程；
+	\item \textbf{机器学习}
+	      \begin{itemize}[parsep=0.5ex,label=$\ast$]
+		      \item 学习Coursera平台上Andrew Ng主讲的Deep Learning系列课程并取得证书，有神经网络搭建和训练经验，了解TensorFlow和PyTorch的使用；
+		      \item 学习斯坦福cs229(Machine Learning)在线课程，掌握常见机器学习算法的理论基础和实现.
+	      \end{itemize}
+
+	\item \textbf{英语}\quad CET-4 590, CET-6 512\quad 能流畅阅读英文技术文档；
+	\item 热衷于发现和解决问题，学习能力强.
+
 \end{itemize}
 
-\section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
-
-\section{\faInfo\ 其他}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
-\end{itemize}
-
-%% Reference
-%\newpage
-%\bibliographystyle{IEEETran}
-%\bibliography{mycite}
 \end{document}
