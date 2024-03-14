@@ -31,12 +31,12 @@
 ]{texgyretermes}
 
 \RequirePackage[
-	a4paper,
-	left=0.8in,
-	right=0.8in,
-	top=0.70in,
-	bottom=0.55in,
-	nohead
+  a4paper,
+  left=0.8in,
+  right=0.8in,
+  top=0.4in,
+  bottom=0.4in,
+  nohead
 ]{geometry}
 
 \RequirePackage{titlesec}
@@ -48,17 +48,17 @@
 \RequirePackage[super]{nth}
 
 \titleformat{\section}         % Customise the \section command 
-  {\Large\scshape\raggedright} % Make the \section headers large (\Large),
-                               % small capitals (\scshape) and left aligned (\raggedright)
-  {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
-  {}                           % Can be used to insert code before the heading
-  [\titlerule]                 % Inserts a horizontal line after the heading
+{\Large\scshape\raggedright} % Make the \section headers large (\Large),
+% small capitals (\scshape) and left aligned (\raggedright)
+{}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
+{}                           % Can be used to insert code before the heading
+[\titlerule]                 % Inserts a horizontal line after the heading
 \titlespacing*{\section}{0cm}{*1.8}{*1.8}
 
 \titleformat{\subsection}
-  {\large\raggedright}
-  {}{0em}
-  {}
+{\large\raggedright}
+{}{0em}
+{}
 \titlespacing*{\subsection}{0cm}{*1.8}{*0.6}
 
 \newcommand{\datedsection}[2]{%
@@ -96,26 +96,26 @@
 \newcommand{\phone}[1]{\faPhone\ {#1}}
 % defines one's linkedin
 % usage: \linkedin{<linkedin>}
-\newcommand{\linkedin}[2][]{\faLinkedin\ 
+\newcommand{\linkedin}[2][]{\faLinkedin\
   \ifthenelse{\isempty{#1}}%
-    {\href{#2}{#2}}
-    {\href{#2}{#1}}}
-\newcommand{\linkedinsquare}[2][]{\faLinkedinSquare\ 
+  {\href{#2}{#2}}
+  {\href{#2}{#1}}}
+\newcommand{\linkedinsquare}[2][]{\faLinkedinSquare\
   \ifthenelse{\isempty{#1}}%
-    {\href{#2}{#2}}
-    {\href{#2}{#1}}}
+  {\href{#2}{#2}}
+  {\href{#2}{#1}}}
 % defines one's GitHub
 % usage: \github{<github>}
-\newcommand{\github}[2][]{\faGithub\ 
+\newcommand{\github}[2][]{\faGithub\
   \ifthenelse{\isempty{#1}}%
-    {\href{#2}{#2}}
-    {\href{#2}{#1}}}
+  {\href{#2}{#2}}
+  {\href{#2}{#1}}}
 % defines one's homepage
 % usage: \homepage{<homepage>}
-\newcommand{\homepage}[2][]{\faLink\ 
+\newcommand{\homepage}[2][]{\faLink\
   \ifthenelse{\isempty{#1}}%
-    {\href{#2}{#2}}
-    {\href{#2}{#1}}}
+  {\href{#2}{#2}}
+  {\href{#2}{#1}}}
 
 \newcommand{\basicInfo}[1]{
   \centerline{\sffamily\large{#1}}
