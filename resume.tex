@@ -1,80 +1,76 @@
 % !TEX program = xelatex
 
 \documentclass{resume}
-%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+%\usepackage{zh_CN-Adobefonts_external} % Omitted as the resume will be in English
+%\usepackage{zh_CN-Adobefonts_internal} % Omitted as well
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Bin Yuan}
+\name{Weihao Tu}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{wy1171633763@163.com} \textperiodcentered\
+  \phone{(+86) 17346651272} \textperiodcentered\
+  \github[Try2beby]{https://github.com/Try2beby}}
 
 \section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
-\textit{Master student} in Electronics Engineering (EE), expected March 2016
-\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
-\textit{B.S.} in Electronics Engineering (EE)
+\datedsubsection{\textbf{Fudan University, School of Big Data}, Shanghai, China}{Sep. 2023 -- Present}
+\textit{Master's student} in Applied Statistics, expected graduation June 2025
+\begin{itemize}
+  \item Main courses: Concepts and Technologies of Knowledge Graphs, Data Mining, Neural Networks and Deep Learning, Social Network Analysis
+\end{itemize}
+
+\datedsubsection{\textbf{Beihang University, School of Mathematical Sciences}, Beijing, China}{Sep. 2019 -- Jun. 2023}
+\textit{Bachelor's} in Information and Computing Science
+\begin{itemize}
+  \item Main courses: Basics of Computer (Python), Data Structures, Probability Theory, Mathematical Statistics, Optimization Theory and Algorithms
+  \item GPA: 3.81/4.0, Rank: 1/10
+  \item Honors and Awards:
+        \begin{itemize}
+          \item National Scholarship (2019-2020), National Motivation Scholarship
+          \item First Prize in the Beijing Division of the National College Student Mathematics Modeling Competition, Honorable Mention in the American Mathematical Modeling Contest
+          \item School Academic Excellence Scholarship, Outstanding Student at School Level
+        \end{itemize}
+\end{itemize}
 
 \section{\faUsers\ Experience}
-\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
-\role{Summer Intern}{Manager: xxx}
-Brief introduction: xxx.
+\datedsubsection{\textbf{Knowledge Graph Construction for Deep Learning Book}}{Dec. 2023}
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item Workflows: Entity extraction, relationship extraction; entity cleaning, entity alignment; knowledge graph visualization.
+  \item Utilized GPT to generate a dataset for entity extraction in the fields of mathematics/computer science, fine-tuned BERT for extraction across the entire book.
+  \item Employed edit distance and semantic embedding as metrics, with the assistance of GPT-4 for entity alignment.
+  \item Responsible for testing the Rebel model's extraction effects, constructing training datasets, fine-tuning BERT, and frontend visualization of the knowledge graph.
 \end{itemize}
 
-\datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
-\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
-Brief introduction: xxx
+\datedsubsection{\textbf{National College Student Mathematics Modeling Competition}}{Sep. 2021}
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item Utilized Principal Component Analysis for supplier scoring; solved multi-objective planning problem with priority method for supplier selection; used 0-1 integer programming for the transportation scheme. Awarded First Prize in the Beijing Division.
+  \item Responsible for data handling (Pandas), programming modeling (Matlab), completed the main part of the programming work.
 \end{itemize}
 
-\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
-\role{\LaTeX, Maintainer}{Individual Projects}
-An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
+\datedsubsection{\textbf{Graduation Thesis on Dual Theory Training Algorithms in Deep Learning}}{Feb. 2023 -- May 2023}
 \begin{itemize}
-  \item Easy to be further customized or extended
-  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-  \item FontAwesome 4.5.0 support
+  \item Implemented an MGD algorithm for solving Minimax problems with coupled linear constraints applied to neural network training.
+  \item Developed a problem structure for the dual problem of neural network training issues within the cut-plane algorithm, optimizing the solution process and reducing solution time by 90%.
 \end{itemize}
 
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
+\section{\faUniversity\ Teaching Assistant}
+\datedsubsection{\textbf{Teaching Assistant for the "Fundamentals of Computer Science (Science)"}}{Mar. 2021 -- Jul. 2021}
+\begin{itemize}
+  \item Number of students in the course: about 400, programming language used: Python.
+  \item Provided weekly online and offline Q\&A sessions to assist students with debugging; graded lab reports and major assignments.
+\end{itemize}
 
 \section{\faCogs\ Skills}
-\begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: C == Python > C++ > Java
-  \item Platform: Linux
-  \item Development: Web, xxx
+\begin{itemize}
+  \item Programming: Proficient in Python, proficient in C and SQL, familiar with data structure concepts, basic automation with Bash scripting; comfortable with Linux platform.
+  \item Machine Learning:
+        \begin{itemize}
+          \item Completed Andrew Ng's Deep Learning series on Coursera and familiar with building and training neural networks using PyTorch.
+          \item Completed the Stanford CS229 (Machine Learning) online course, understanding theoretical foundations and implementations of common machine learning algorithms.
+        \end{itemize}
+  \item Languages: English - Fluent (CET-4 590, CET-6 512), Mandarin - Native speaker.
 \end{itemize}
 
-\section{\faHeartO\ Honors and Awards}
-\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
-\datedline{Other awards}{2015}
-
-\section{\faInfo\ Miscellaneous}
-\begin{itemize}[parsep=0.5ex]
-  \item Blog: http://your.blog.me
-  \item GitHub: https://github.com/username
-  \item Languages: English - Fluent, Mandarin - Native speaker
-\end{itemize}
-
-%% Reference
-%\newpage
-%\bibliographystyle{IEEETran}
-%\bibliography{mycite}
 \end{document}

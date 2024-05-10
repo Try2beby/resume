@@ -33,26 +33,32 @@
 	\item \textbf{荣誉奖励}:
 	      \begin{itemize}[label=$\ast$]
 		      \item \textbf{国家奖学金}(2019-2020)、国家励志奖学金
-		      \item 全国大学生数学建模竞赛北京赛区甲组一等奖，美国大学生数学建模竞赛H奖.
+		      \item 第四届美团商业分析精英大赛卓越作品奖，全国大学生数学建模竞赛北京赛区甲组一等奖，美国大学生数学建模竞赛H奖
 		      \item 校学习优秀奖学金、校级优秀生
 	      \end{itemize}
 \end{itemize}
 
 \section{\faUsers\ 项目经历}
-\mydatedsubsectionthree{\textbf{知识图谱构建}}{\textit{Deep Learning}书籍知识图谱构建}{2023年12月}
+\mydatedsubsectionthree{\textbf{RAG构建及优化}}{\textbf{AI Rudder} (实习)}{2024年2月--2024年5月}
 \begin{itemize}
-	\item 工作流：实体抽取、关系抽取；实体清理、实体对齐；知识图谱可视化；
-	\item 利用GPT生成数学/计算机领域实体抽取数据集，微调BERT，将其用于全书实体的抽取；
-	\item 以编辑距离和语义embedding为指标，辅以GPT4进行实体对齐；
-	\item 负责测试Rebel模型的提取效果、训练数据集的构建和BERT微调及知识图谱的前端可视化.
+	\item 基于 LlamaIndex 完整搭建 RAG retrieval 流程. 尝试使用多种 embedding, sparse, 混合搜索, rerank, rank fusion模型（方法）优化 retrieval 指标；
+	\item 基于 Llama 3 搭建流式对话系统，学习并实践一次性 prompt 编排.
 \end{itemize}
 
-\mydatedsubsectionthree{\textbf{全国大学生数学建模竞赛}}{基于历史数据的原材料订购与转运问题研究}{2021年9月}
-% \role{队长}{数学建模竞赛，和学院内其他两位同学合作完成}
+\mydatedsubsectionthree{\textbf{第四届美团商业分析精英大赛}}{基于BERT的评论情感分析与评分预测}{2024年4月}
 \begin{itemize}
-	\item 利用主成分分析法对供应商进行评分；采用优先级法解决多目标规划问题，完成对供应商的选择；用0-1整数规划，得到了转运方案. 最终，该作品获评北京赛区甲组一等奖.
-	\item 负责数据处理(pandas)、编程建模(matlab)，完成了编程部
-	      分的主要工作；
+	\item 使用python爬取上海市内餐饮店的评论数据，分18个细粒度使用GPT-3.5进行情感分类标注；
+	\item 基于Bert-Base Chinese搭建 ACSA-RP 联合模型，使用带权的交叉熵损失处理类别不均衡问题；
+	      % \item 在情感分类上准确率（非缺失类）达到70\%；评分回归任务中，误差呈现中心为0的单峰分布，MAE 为 0.4266. 均优于非基于BERT的模型；
+	\item 负责模型搭建、训练；获\textbf{卓越作品奖} (49/792).
+\end{itemize}
+
+
+\mydatedsubsectionthree{\textbf{知识图谱构建}}{\textit{Deep Learning}书籍知识图谱构建}{2023年12月}
+\begin{itemize}
+	\item 利用GPT-3.5生成实体抽取数据集，微调BERT，将其用于全书实体的抽取；
+	\item 以编辑距离和语义embedding为指标，辅以GPT4进行实体对齐；
+	\item 使用BERT for MRE进行关系分类，构建知识图谱.
 \end{itemize}
 
 \mydatedsubsectionthree{\textbf{毕业设计}}{深度学习中基于对偶理论的训练算法探究}{2023年2月--2023年5月}
@@ -65,13 +71,16 @@
 	      \end{itemize}
 \end{itemize}
 
-\section{\faUniversity\ 助教工作}
-\datedsubsection{北京航空航天大学《大学计算机基础（理科）》课程助教}{2021年3月-2021年7月}
-\begin{itemize}
-	\item 课程学生人数：约400，课程所用语言：Python；
-	\item 每周线上答疑与线下答疑，帮助学生debug；批改学生实验报告和大作业.
-\end{itemize}
-
+% \section{\faCogs\ 能力素养}
+% % increase linespacing [parsep=0.5ex]
+% \begin{itemize}[parsep=0.5ex]
+% 	\item \textbf{编程}\quad 熟练使用Python，掌握C语言、SQL，掌握数据结构知识；熟悉linux平台的使用；
+% 	\item \textbf{机器学习}\quad
+% 	      \begin{itemize}[parsep=0.5ex,label=$\ast$]
+% 		      \item 学习深度学习、机器学习课程及阅读相关书籍，熟悉相关理论基础；
+% 		      \item 熟悉神经网络搭建和训练，熟悉PyTorch的使用；
+% 	      \end{itemize}
+% \end{itemize}
 \section{\faCogs\ 能力素养}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
@@ -83,5 +92,6 @@
 	      \end{itemize}
 	\item \textbf{英语}\quad CET-4 590, CET-6 512\quad 有较强的英文读写能力；
 \end{itemize}
+
 
 \end{document}
